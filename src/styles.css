@@ -65,3 +65,14 @@
 	position: relative;
 	display: inline-block;
 }
+
+button {
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	background-color: white;
+	border-radius: 2px;
+	transition: all 0.2s;
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
