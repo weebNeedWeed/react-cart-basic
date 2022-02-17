@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CartItem from "./CartItem";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 class Cart extends Component {
 	render() {
@@ -12,9 +13,16 @@ class Cart extends Component {
 			summary = summary + elm.quantity * elm.defaultPrice;
 		});
 
+		const cartItemsCount = cartItems.length;
+
 		return (
 			<div>
-				<h1 className="h1">Cart</h1>
+				<h1 className="h1">
+					<div className="cart-icon">
+						<AiOutlineShoppingCart />
+						<span className="cart-item-count">{cartItemsCount}</span>
+					</div>
+				</h1>
 
 				<div style={{ display: "flex", padding: "20px", gap: "10px" }}>
 					<table className="cart-item-list">

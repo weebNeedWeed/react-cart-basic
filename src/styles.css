@@ -46,3 +46,22 @@
 .cart-item-list tr:nth-child(even) {
 	background-color: #dddddd;
 }
+
+.cart-item-count {
+	position: absolute;
+	top: 0;
+	right: -1px;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.cart-icon {
+	position: relative;
+	display: inline-block;
+}
